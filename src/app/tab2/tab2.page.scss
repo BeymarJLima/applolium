@@ -1,3 +1,25 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+h1 {
+  text-align: center;
+  font-family: consolas;
+}
+
+ion-img {
+  width: 200px;
+  height: 190px;
+  margin-left: 80px;
+}
+
+ion-input {
+  font-family: consolas;
+  text-align: center;
+}
+
+ion-button {
+  padding: -10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

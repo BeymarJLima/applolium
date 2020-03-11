@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Tela de Cadastro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-img src="assets/imagenes/logo.jpg"></ion-img>
+    <ion-list>
+        <ion-item>
+            <ion-input type="text"     maxlength=30 name="nombre"    [(ngModel)]="nome"      placeholder="Nome completo:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input   type="email"    maxlength=30 name="mail"      [(ngModel)]="email"     placeholder="E-mail:"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="password" maxlength=12 name="senha"     [(ngModel)]="senha"     placeholder="Senha:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input   type="password" maxlength=12 name="Confsenha" [(ngModel)]="Confsenha" placeholder="Confirmar Senha:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input   type="text"     maxlength=30 name="endereco"  [(ngModel)]="enderec"   placeholder="Endereço:"></ion-input>
+        </ion-item>
+    </ion-list><br>
+    <ion-button shape="round" expand="block" fill="outline" (click)="cadastrar()">Cadastrar</ion-button>    
 </ion-content>
